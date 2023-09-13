@@ -60,9 +60,6 @@ in
       ''
         #!/usr/bin/env bash
 
-        # if file not exists, generate a new private key
-        echo "something" > /tmp/ensureWireguardKeysExist.log
-
         if [ ! -f ${privateKey} ]; 
         then
           mkdir -p $(dirname ${privateKey})
