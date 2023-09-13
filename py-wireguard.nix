@@ -96,7 +96,7 @@ in
                   wireguardPeers = [{
                     wireguardPeerConfig = {
                       PublicKey = wgConf.publicKey;
-                      AllowedIPs = [ "10.100.0.1" "0.0.0.0/0" ];
+                      AllowedIPs = [ "10.100.0.1" "0.0.0.0/0" "10.100.0.3" ];
                       Endpoint = "${wgConf.ip}:51820";
                     };
                   }];
